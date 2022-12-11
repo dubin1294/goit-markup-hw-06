@@ -456,15 +456,58 @@
           </svg>
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <div class="input-box">
-          <form>
-            <label class="modal-label">Ім'я<input type="text" name="username" class="modal-input" /></label>
-            <label class="modal-label">Телефон<input type="tel" name="phone_number" class="modal-input" /></label>
-            <label class="modal-label">Пошта<input type="email" name="email" class="modal-input" /></label>
-            <label class="modal-label">Коментар<textarea class="modal-textarea" name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+        <form>
+          <div class="input-box">
+            <label for="name" class="modal-label">Ім'я</label>
+            <div class="modal-thumb">
+              <input type="text" name="username" id="name" class="modal-input" />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./imeges/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="tel" class="modal-label">Телефон</label>
+            <div class="modal-thumb">
+              <input type="tel" name="phone_number" id="tel" class="modal-input" />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./imeges/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="email" class="modal-label">Пошта</label>
+            <div class="modal-thumb">
+              <input type="email" name="email" id="email" class="modal-input" />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./imeges/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-box">
+            <label class="modal-label"
+              >Коментар<textarea
+                class="modal-textarea"
+                name="coment"
+                placeholder="Введіть текст"
+              ></textarea>
             </label>
-          </form>
-        </div>
+          </div>
+          <div class="check">
+            <label class="checkbox-label">
+              <input class="checkbox" value="check" type="checkbox" name="politic" />
+              <svg class="checkbox-icon" width="16" height="16">
+                <use href="./imeges/icons.svg#icon-vector"></use>
+              </svg>
+              <span class="check-text"
+                >Погоджуюся з розсилкою та приймаю <a class="checkbox-link" href="#">
+                  Умови договору</a
+                ></span
+              >
+            </label>
+          </div>
+        </form>
         <button type="submit" class="form-btn">Відправити</button>
       </div>
     </div>
