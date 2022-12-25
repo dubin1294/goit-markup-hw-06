@@ -14,13 +14,14 @@
 
 .feature__list {
   display: flex;
-  .feature__item {
+}
+.feature__item {
   width: 270px;
-}
-}
-.feature__item:not(:last-child) {
+  &:not(:last-child) {
   margin-right: 30px;
 }
+}
+
 
 .icon-container {
   display: flex;
